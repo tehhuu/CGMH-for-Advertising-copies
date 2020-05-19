@@ -3,10 +3,10 @@ import tensorflow as tf
 import pickle as pkl
 
 tf.flags.DEFINE_string('mode','make','make or use or reverse')
-tf.flags.DEFINE_string('src_path','wakati_cabocha_20-50_2_wp.txt','')
-tf.flags.DEFINE_string('src_org_path','wakati_mainichi_20-50.txt','')
+tf.flags.DEFINE_string('src_path','wakati_wiki.txt','')
+tf.flags.DEFINE_string('src_org_path','wakati_advertising_copies.txt','')
 tf.flags.DEFINE_string('tgt_path','output','')
-tf.flags.DEFINE_string('dict_path','dict_01.pkl','')
+tf.flags.DEFINE_string('dict_path','dict.pkl','')
 tf.flags.DEFINE_integer('dict_size',50000,'')
 FLAGS=tf.flags.FLAGS
 

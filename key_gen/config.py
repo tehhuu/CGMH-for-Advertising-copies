@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 class config(object):
     def __init__(self):
-        self.data_path='../data/1-billion/wakati_wiki_20-50_5m.txt'            #path of data for training language model  
-        self.ft_data_path = '../data/1-billion/wakati_cabocha_20-50_2.txt'
+        self.data_path='../data/1-billion/wakati_wiki.txt'            #path of data for training language model  
+        self.ft_data_path = '../data/1-billion/wakati_advertising_copies.txt'
         self.use_data_path='./input/input.txt'                         #data path of keywords
-        self.dict_path='../data/1-billion/dict_wakati_wiki_cabocha_20-50_5m_2.pkl'                    #dictionary path
+        self.dict_path='../data/1-billion/dict.pkl'                    #dictionary path
         #self.emb_path='../data/1-billion/emb_wakati_wiki_kokoku_20-50.pkl'                  #word embedding path, used when config.sim=='word_max' or config.sim=='combine'
         self.skipthoughts_path='../skip_thoughts'                  #path of skipthoughts, used when config.sim=='skipthoughts' or config.sim=='combine'
         self.pos_path='../POS/english-models'                       #path for pos tagger
@@ -20,7 +20,7 @@ class config(object):
         self.shuffle=False
         self.use_log_path='./log/use_log.txt'
 
-        self.tdict_path='../data/1-billion/dict_char_wiki_cabocha_20-50_5m_2.pkl' #単語モデルの辞書
+        self.tdict_path='../data/1-billion/dict_c.pkl' #単語モデルの辞書
         self.tforward_save_path='./model_c/forward.ckpt' #単語モデルの前向きモデル
         self.tbackward_save_path='./model_c/backward.ckpt' #単語モデルの後ろ向きモデル
         self.tdict_size=10762 #単語モデルの辞書サイズ
